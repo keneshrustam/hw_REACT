@@ -6,11 +6,10 @@ function App() {
   return (
     <div>
       <h1>my react pril</h1>
-      <myComp />
+      <Props colorItem = "pink"/>
       <Props/>
-      <SecendTask2/>
     </div>
-  );
+  )
 }
 
 export default App;
