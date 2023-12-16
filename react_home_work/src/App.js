@@ -10,6 +10,7 @@ import Props from './jsx';
 import SecendTask2 from './jsx/index2';
 import TodoList from './TODO/input';
 import Counter from './jsx/HUKI';
+import Itemlist from './jsx/HUKI/itemlist';
 
 function App() {
   // const [name, setName] = useState("...")
@@ -66,7 +67,10 @@ function App() {
       <TodoList /> */}
 
 
-      <Counter />
+      {/* <Counter /> */}
+
+
+      <Itemlist />
 
     </div>
   )
