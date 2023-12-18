@@ -11,6 +11,7 @@ import SecendTask2 from './jsx/index2';
 import TodoList from './TODO/input';
 import Counter from './jsx/HUKI';
 import Itemlist from './jsx/HUKI/itemlist';
+import AppEND from './jsx/HUKI/itemlist';
 
 function App() {
   // const [name, setName] = useState("...")
@@ -70,7 +71,9 @@ function App() {
       {/* <Counter /> */}
 
 
-      <Itemlist />
+      {/* <Itemlist /> */}
+
+      <AppEND />
 
     </div>
   )
