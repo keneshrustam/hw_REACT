@@ -12,6 +12,11 @@ import TodoList from './TODO/input';
 import Counter from './jsx/HUKI';
 import Itemlist from './jsx/HUKI/itemlist';
 import AppEND from './jsx/HUKI/itemlist';
+import TextInput from './jsx/HUKI/textInput';
+import ThemeProvider from './jsx/HUKI/provider';
+import Header from './jsx/HUKI/header';
+import Content from './jsx/HUKI/content';
+
 
 function App() {
   // const [name, setName] = useState("...")
@@ -73,7 +78,13 @@ function App() {
 
       {/* <Itemlist /> */}
 
-      <AppEND />
+
+      <TextInput />
+        
+      <ThemeProvider>
+        <Header />
+        <Content />
+      </ThemeProvider>
 
     </div>
   )

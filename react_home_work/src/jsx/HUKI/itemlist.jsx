@@ -9,7 +9,7 @@ const ItemList = () => {
     const handleItemClick = useCallback(index => {
       console.log(`Index ${index}`);
     }, []);
-
+    
     return (
       <div>
         <ul>
