@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom"
 import './App.css';
 import Events from './EVENTS';
 import Portal from './PORTAL';
@@ -16,6 +17,11 @@ import TextInput from './jsx/HUKI/textInput';
 import ThemeProvider from './jsx/HUKI/provider';
 import Header from './jsx/HUKI/header';
 import Content from './jsx/HUKI/content';
+import Home from './components/Home';
+import About from './components/About';
+import Contact from './components/Contact';
+import Error from './components/Error';
+
 
 
 function App() {
@@ -79,13 +85,24 @@ function App() {
       {/* <Itemlist /> */}
 
 
-      <TextInput />
+      {/* <TextInput />
         
       <ThemeProvider>
         <Header />
         <Content />
-      </ThemeProvider>
-
+      </ThemeProvider> */}
+      <BrowserRouter>
+      <ul>
+        <li><Link to={'/Home'}>Главная</Link></li>
+        <li><Link to={'https://www.codifylab.com/'}>О нас </Link></li>
+        <li><Link to={'/Contact'}>Контакты</Link></li>
+      </ul>
+          <Routes>
+            <Route path='/Home' element={<Home/>}/>
+            <Route path='/Contact' element={<Contact/>}/>
+            <Route path='*' element={<Error/>}/>
+          </Routes>      
+      </BrowserRouter>
     </div>
   )
 }
